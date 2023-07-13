@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game Structure</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            background: #eee;
+            border: 2px solid grey;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ludo Game</h1>
+    <div class="container">
+        <svg height="500" width="500" >
+            <rect x="0" y="0" height="200" width="200" fill="red" stroke="black"></rect>
+            <circle cx="100" cy="100" r="80" stroke="black" fill="white"> </circle>
+            <!-- <circle cx="100" ="100" r="50" stroke="black" fill="white"> </circle> -->
+            <circle cx="65" cy="65" r="15" stroke="black" fill="red"> </circle>
+            <circle cx="135" cy="65" r="15" stroke="black" fill="red"> </circle>
+            <circle cx="65" cy="135" r="15" stroke="black" fill="red"> </circle>
+            <circle cx="135" cy="135" r="15" stroke="black" fill="red"> </circle>
+            <!-- <rect x="20" y="20" width="160" height="160" fill="none" stroke="black"></rect> -->
+            <!-- <rect x="50" y="50" width="100" height="100" fill="none" stroke="black"></rect> -->
+        
+            <rect x="300" y="0" height="200" width="200" fill="blue" stroke="black"></rect>
+            <circle cx="400" cy="100" r="80" stroke="black" fill="white"> </circle>
+            <circle cx="365" cy="65" r="15" stroke="black" fill="blue"> </circle>
+            <circle cx="435" cy="65" r="15" stroke="black" fill="blue"> </circle>
+            <circle cx="365" cy="135" r="15" stroke="black" fill="blue"> </circle>
+            <circle cx="435" cy="135" r="15" stroke="black" fill="blue"> </circle>
+
+            <rect x="300" y="300" height="200" width="200" fill="green" stroke="black"></rect>
+            <circle cx="400" cy="400" r="80" stroke="black" fill="white"> </circle>
+            <circle cx="365" cy="365" r="15" stroke="black" fill="green"> </circle>
+            <circle cx="435" cy="365" r="15" stroke="black" fill="green"> </circle>
+            <circle cx="365" cy="435" r="15" stroke="black" fill="green"> </circle>
+            <circle cx="435" cy="435" r="15" stroke="black" fill="green"> </circle>
+
+            <rect x="0" y="300" height="200" width="200" fill="yellow" stroke="black"></rect>
+            <circle cx="100" cy="400" r="80" stroke="black" fill="white"> </circle>
+            <circle cx="65" cy="365" r="15" stroke="black" fill="yellow"> </circle>
+            <circle cx="135" cy="365" r="15" stroke="black" fill="yellow"> </circle>
+            <circle cx="65" cy="435" r="15" stroke="black" fill="yellow"> </circle>
+            <circle cx="135" cy="435" r="15" stroke="black" fill="yellow"> </circle>
+
+
+        
+            <line x1="200" y1="0" x2="300" y2="0" stroke-width="2" stroke="black"></line>
+            <rect x="233.3" y="0" height="266.6" width="33.3" fill="blue" stroke-width="2" stroke="black"></rect>
+            <line x1="200" y1="33.3" x2="300" y2="33.3" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="66.6" x2="300" y2="66.6" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="99.9" x2="300" y2="99.9" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="133.2" x2="300" y2="133.2" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="166.5" x2="300" y2="166.5" stroke-width="2" stroke="black"></line>
+
+            <line x1="500" y1="200" x2="500" y2="300" stroke-width="2" stroke="black"></line>
+            <rect x="300" y="233.3" height="33.3" width="200" fill="green" stroke-width="2" stroke="black"></rect>
+            <line x1="466.7" y1="200" x2="466.7" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="433.4" y1="200" x2="433.4" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="400.1" y1="200" x2="400.1" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="366.8" y1="200" x2="366.8" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="333.5" y1="200" x2="333.5" y2="300" stroke-width="2" stroke="black"></line>
+
+            <line x1="200" y1="500" x2="400" y2="500" stroke-width="2" stroke="black"></line>
+            <rect x="233.3" y="300" height="200" width="33.3" fill="Yellow" stroke-width="2" stroke="black"></rect>
+            <line x1="200" y1="466.6" x2="300" y2="466.6" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="433.4" x2="300" y2="433.4" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="400.1" x2="300" y2="400.1" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="366.8" x2="300" y2="366.8" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="333.5" x2="300" y2="333.5" stroke-width="2" stroke="black"></line>
+
+            <line x1="0" y1="200" x2="0" y2="300" stroke-width="2" stroke="black"></line>
+            <rect x="0" y="233.3" height="33.3" width="200" fill="red" stroke-width="2" stroke="black"></rect>
+            <line x1="33.3" y1="200" x2="33.3" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="66.6" y1="200" x2="66.6" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="99.9" y1="200" x2="99.9" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="133.2" y1="200" x2="133.2" y2="300" stroke-width="2" stroke="black"></line>
+            <line x1="166.5" y1="200" x2="166.5" y2="300" stroke-width="2" stroke="black"></line>
+
+
+
+            <polygon points="200,200 300,200 250,250 Z" fill="blue" stroke="black"></polygon>
+            <polygon points="200,200 200,300 250,250 Z" fill="red" stroke="black"></polygon>
+            <polygon points="200,300 250,250 300,300 Z" fill="yellow" stroke="black"></polygon>
+            <polygon points="300,300 300,200 250,250 Z" fill="green" stroke="black"></polygon>
+
+
+
+            <line x1="200" y1="66.6" x2="233.3" y2="99.9" stroke-width="2" stroke="black"></line>
+            <line x1="200" y1="99.9" x2="233.3" y2="66.6" stroke-width="2" stroke="black"></line>
+
+            <line x1="433.4" y1="200" x2="400.1" y2="233.3" stroke-width="2" stroke="black"></line>
+            <line x1="400.1" y1="200" x2="433.3" y2="233.3" stroke-width="2" stroke="black"></line>
+
+            <line x1="266.7" y1="433.4" x2="300" y2="400.1" stroke-width="2" stroke="black"></line>
+            <line x1="266.7" y1="400.1" x2="300" y2="433.4" stroke-width="2" stroke="black"></line>
+
+            <line x1="66.6" y1="300" x2="99.9" y2="266.7" stroke-width="2" stroke="black"></line>
+            <line x1="66.6" y1="266.7" x2="99.9" y2="300" stroke-width="2" stroke="black"></line>
+            
+            
+
+            <polygon points="271.6,39.3 294.9,39.3 283.35,60.6" fill="blue" stroke="black"></polygon>
+            <polygon points="460.7,271.6 460.7,294.9 439.4,283.35" fill="green" stroke="black"></polygon>
+            <polygon points="205,460.7 228.3,460.7 216.65,439.4" fill="yellow" stroke="black"></polygon>
+            <polygon points="39.3,205 39.3,228.3 60.6,216.65" fill="red" stroke="black"></polygon>
+        </svg>
+    </div>
+
+</body>
+</html>
